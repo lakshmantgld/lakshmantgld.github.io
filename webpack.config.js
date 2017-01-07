@@ -51,6 +51,7 @@ var config = {
 1. remove entry array and have just **entry: APP_DIR + '/main.js'**
 2. remove devtool: 'inline-source-map'
 3. Add the commented plugin to the plugin in webpack.config.
+4. Type the "webpack -p" command in the "reactjs/" dir.
 */
 
 module.exports = config;
