@@ -20,7 +20,7 @@ class Contact extends Component {
   }
 
   getImageURL(contactType) {
-    return "/images/" + contactType + ".png";
+    return "./images/" + contactType + ".png";
   }
 
   renderContact(contact) {

@@ -36,7 +36,7 @@ app.use('/event/dist', proxy(url.parse('http://localhost:3000/dist')));
 app.get('/*', function(req, res) {
     // console.log(req.route);
     res.setHeader('Content-Type',contentType);
-    res.sendFile(__dirname + '/index.html');
+    res.sendFile(__dirname + '/indexDevelopment.html');
 });
 
 const PORT = process.env.PORT || 3000;
