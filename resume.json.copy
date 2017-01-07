@@ -1,0 +1,53 @@
+{
+  "name": "",
+  "address": "",
+  "email": "",
+  "mobile": "",
+  "about": "",
+  "skills": {
+    "language" : "",
+    "frameworks" : "",
+    "database" : "",
+    "tools" : "",
+    "misc" : ""
+  },
+  "experience": [
+    {
+      "position" : "",
+      "organization" : "",
+      "location" : "",
+      "year" : "",
+      "description" : ""
+    }
+  ],
+  "education": [
+    {
+      "name": "",
+      "degree": "",
+      "year": "",
+      "description": ""
+    }
+  ],
+  "awards": [
+    {
+      "name": "",
+      "organiser": "",
+      "date": "",
+      "description": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "",
+      "role": "",
+      "description": ""
+    }
+  ],
+  "contacts": {
+    "mail": "",
+    "stackoverflow": "",
+    "github": "",
+    "twitter": "",
+    "linkedin": ""
+  }
+}
