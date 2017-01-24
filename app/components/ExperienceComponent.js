@@ -10,7 +10,7 @@ let styles = {
   }
 }
 
-class Experience extends Component {
+class ExperienceComponent extends Component {
   constructor(props) {
     super(props);
   }
@@ -25,7 +25,7 @@ class Experience extends Component {
       let experienceSet = [];
       experienceSet.push(<p className='awardName'>{experience[i]["position"]}</p>);
       experienceSet.push(<p className='awardOrganiser'>{experience[i]["organization"]}</p>);
-      experienceSet.push(<p className='awardDate'>{experience[i]["location"]}</p>);
+      experienceSet.push(<p className='awardYear'>{experience[i]["location"]}</p>);
       experienceSet.push(<p className='awardDescription'>{experience[i]["year"]}</p>);
       experienceSet.push(<p className='awardDescription'>{experience[i]["description"]}</p>);
       renderedexperience.push(experienceSet);
@@ -53,4 +53,4 @@ class Experience extends Component {
   }
   }
 
-export default Experience;
+export default ExperienceComponent;

@@ -10,7 +10,7 @@ let styles = {
   }
 }
 
-class Education extends Component {
+class EducationComponent extends Component {
   constructor(props) {
     super(props);
   }
@@ -54,4 +54,4 @@ class Education extends Component {
   }
 }
 
-export default Education;
+export default EducationComponent;

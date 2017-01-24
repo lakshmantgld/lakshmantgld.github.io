@@ -5,13 +5,13 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import resume from '../../resume.json';
 
-import About from './About';
-import Experience from './Experience';
-import Skills from './Skills';
-import Contact from './Contact';
-import Education from './Education';
-import Awards from './Awards';
-import Projects from './Projects';
+import About from './AboutComponent';
+import Experience from './ExperienceComponent';
+import Skills from './SkillsComponent';
+import Contact from './ContactComponent';
+import Education from './EducationComponent';
+import Awards from './AwardsComponent';
+import Projects from './ProjectsComponent';
 
 let styles = {
   robotofont: {
@@ -29,8 +29,6 @@ const muiTheme = getMuiTheme({
 });
 
 
-
-
 class ResumeComponent extends Component {
   render() {
     return (
@@ -38,15 +36,22 @@ class ResumeComponent extends Component {
         <div className='fullPage'>
           <div className='row col-xs-offset-1 col-md-offset-2'>
             <div className='col-xs-12 col-md-10' style={{'paddingTop' : '37px'}}>
-             <h1 className='robotoRegFont'>{resume.name}</h1>
-             <h5 className='robotoLightFont' style={{'color' : '#797575','lineHeight' : '2'}}>{resume.address} &nbsp;&nbsp;|&nbsp;&nbsp;{resume.email} &nbsp;&nbsp;|&nbsp;{resume.mobile}</h5>
-          <About abt={resume.about}/>
-          <Skills skillSet={resume.skills}/>
-          <Education education={resume.education}/>
-          <Awards awards={resume.awards}/>
-          <Projects projects={resume.projects}/>
-          <Contact contact={resume.contacts}/>
-          <Experience experience={resume.experience}/>
+              <h1 className='robotoRegFont'>{resume.name}</h1>
+              <h5 className='robotoLightFont' style={{'color' : '#797575','lineHeight' : '2'}}>{resume.address} &nbsp;&nbsp;|&nbsp;&nbsp;{resume.email} &nbsp;&nbsp;|&nbsp;{resume.mobile}</h5>
+              <About abt={resume.about}/>
+              <br />
+              <Skills skillSet={resume.skills}/>
+              <br />
+              <Experience experience={resume.experience}/>
+              <br />
+              <Projects projects={resume.projects}/>
+              <br />
+              <Awards awards={resume.awards}/>
+              <br />
+              <Education education={resume.education}/>
+              <br />
+              <Contact contact={resume.contacts}/>
+              <br />
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@ let styles = {
     }
 }
 
-class Skills extends Component {
+class SkillsComponent extends Component {
     constructor(props) {
         super(props);
     }
@@ -47,9 +47,10 @@ class Skills extends Component {
                         {this.renderSkillSet(this.props.skillSet)}
                     </div>
                 </div>
+              <br/>
             </div>
         );
     }
 }
 
-export default Skills;
+export default SkillsComponent;
