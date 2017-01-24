@@ -10,7 +10,7 @@ let styles = {
   }
 }
 
-class Awards extends Component {
+class AwardsComponent extends Component {
   constructor(props) {
     super(props);
   }
@@ -54,4 +54,4 @@ class Awards extends Component {
   }
 }
 
-export default Awards;
+export default AwardsComponent;

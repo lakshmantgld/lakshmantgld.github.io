@@ -5,7 +5,13 @@
 body {
   margin: 0;
 }
-
+#app{
+  line-height: 20px;
+}
+p {
+margin: 0;
+padding: 0;
+}
 img {
   height: 30px;
 }
@@ -20,7 +26,7 @@ img {
 }
 .sideHeading{
   font-family: 'roboto-reg';
-  color: #973df2;
+  color: #0cb4ff;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -56,13 +62,8 @@ img {
   font-weight: 300;
   font-size: 14px;
   color: #797575;
+
 }
 .imgSpace{
   padding-right: 18px;
-}
-.imagesDiv{
-  padding-top: 10px;
-}
-.sideContent{
-  line-height: 7px;
 }

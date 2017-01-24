@@ -1,3 +1,4 @@
+
 import React, { PropTypes, Component } from 'react';
 import { connect } from 'react-redux';
 
@@ -10,7 +11,7 @@ let styles = {
   }
 }
 
-class About extends Component {
+class AboutComponent extends Component {
   constructor(props) {
     super(props);
   }
@@ -31,9 +32,10 @@ class About extends Component {
             <p className='contents'> {this.props.abt} </p>
           </div>
         </div>
+        <br />
       </div>
     );
   }
 }
 
-export default About;
+export default AboutComponent;

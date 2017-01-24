@@ -10,7 +10,7 @@ let styles = {
   }
 }
 
-class Projects extends Component {
+class ProjectsComponent extends Component {
   constructor(props) {
     super(props);
   }
@@ -54,4 +54,4 @@ class Projects extends Component {
   }
 
 
-export default Projects;
+export default ProjectsComponent;
