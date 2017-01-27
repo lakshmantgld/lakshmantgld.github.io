@@ -40,7 +40,8 @@ img {
   font-family: 'roboto-light';
   font-weight: 300;
   font-size: 14px;
-
+  display: inline;
+  padding-left: 6px;
 }
 .universityName, .awardName, .projectName{
   font-family: 'roboto-medium';
@@ -66,4 +67,14 @@ img {
 }
 .imgSpace{
   padding-right: 18px;
+}
+
+.img-skill-icon {
+    display: inline-block;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+#skill-padding-bottom{
+    padding-bottom: 4px;
 }

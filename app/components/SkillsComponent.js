@@ -15,6 +15,10 @@ class SkillsComponent extends Component {
         super(props);
     }
 
+    getImageURL(skillType) {
+      return "./images/"+skillType+".png";
+    }
+
     componentDidMount() {}
 
     renderSkillSet(skillSet) {
@@ -27,7 +31,7 @@ class SkillsComponent extends Component {
                 for (let i = 1; i < skillNames.length; i++) {
                     skillValuesAppended += " • " + skillNames[i];
                 }
-                renderedSkillSet.push(<p className='skill'>{skillValuesAppended}</p>);
+                renderedSkillSet.push(<div id='skill-padding-bottom'><img className='img-skill-icon' src={this.getImageURL(skillType)}></img><p className='skill'>{skillValuesAppended}</p><br /></div>);
             }
         }
         return renderedSkillSet;
