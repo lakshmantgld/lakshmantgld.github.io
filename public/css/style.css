@@ -8,6 +8,13 @@ body {
 #app{
   line-height: 20px;
 }
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+a:hover{
+  color : #9c27b0;
+}
 p {
 margin: 0;
 padding: 0;

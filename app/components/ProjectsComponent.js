@@ -23,7 +23,12 @@ class ProjectsComponent extends Component {
     let renderedprojects = [];
     for (let i = 0; i < projects.length; i++){
       let projectsSet = [];
-      projectsSet.push(<p className='projectName'>{projects[i]["name"]}</p>);
+      if(projects[i]["link"]){
+        projectsSet.push(<a target="_blank" href={projects[i]["link"]}><p className='projectName'>{projects[i]["name"]}</p></a>);
+      }
+      else{
+        projectsSet.push(<p className='projectName'>{projects[i]["name"]}</p>);
+      }
       if (projects[i]["role"] !== "") {
         projectsSet.push(<p className='projectRole'>{projects[i]["role"]}</p>);
       }

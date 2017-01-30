@@ -49,4 +49,4 @@ new WebpackDevServer(webpack(config), {
     console.log('Listening at port '+ PORT);
 });
 
-app.listen(8080);
+app.listen(8000);
