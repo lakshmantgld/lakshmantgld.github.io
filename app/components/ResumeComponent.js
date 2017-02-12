@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import resume from '../../resume.json';
+import fetch from 'isomorphic-fetch';
 
 import About from './AboutComponent';
 import Experience from './ExperienceComponent';
@@ -30,6 +31,28 @@ const muiTheme = getMuiTheme({
 
 
 class ResumeComponent extends Component {
+
+  componentDidMount() {
+    console.log("in componentDidMount");
+    fetch('https://o98r03g5xb.execute-api.us-east-1.amazonaws.com/dev/sendMessage', {credentials: 'omit',
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      }})
+      .then(res => {
+        if (res.status !== 200) {
+          console.log('error in posting event');
+        } else {
+          console.log(JSON.stringify(res));
+          return res.json();
+        }
+      })
+      .then(json => {
+        console.log(JSON.stringify(json));
+      })
+  }
+
   render() {
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
