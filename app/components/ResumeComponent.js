@@ -13,6 +13,7 @@ import Contact from './ContactComponent';
 import Education from './EducationComponent';
 import Awards from './AwardsComponent';
 import Projects from './ProjectsComponent';
+var $ = require ('jquery');
 
 let styles = {
   robotofont: {
@@ -33,24 +34,30 @@ const muiTheme = getMuiTheme({
 class ResumeComponent extends Component {
 
   componentDidMount() {
-    console.log("in componentDidMount");
-    fetch('https://o98r03g5xb.execute-api.us-east-1.amazonaws.com/dev/sendMessage', {credentials: 'omit',
+    console.log("did mount");
+    $.get("https://ipinfo.io", function(response) {
+      console.log(response);
+      const city = response.city;
+      const country = response.country;
+      const region = response.region;
+      fetch('https://hooks.slack.com/services/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', {
+      credentials: 'omit',
       method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      }})
-      .then(res => {
-        if (res.status !== 200) {
-          console.log('error in posting event');
-        } else {
-          console.log(JSON.stringify(res));
-          return res.json();
-        }
-      })
-      .then(json => {
-        console.log(JSON.stringify(json));
-      })
+      //body: JSON.stringify({'value' : value})})
+      body: JSON.stringify({'text' : "someone viewed your resume from city: " + city + ", region: " + region + ", country: " + country})})
+       .then(res => {
+         if (res.status !== 200) {
+           let status = res.status;
+           console.log('error in posting event');
+         }
+         console.log("succesfully saved");
+         console.log(res.json());
+       })
+       .then(res =>{
+         console.log(res);
+       })
+    }, "jsonp")
+
   }
 
   render() {
