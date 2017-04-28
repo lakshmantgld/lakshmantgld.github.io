@@ -11,6 +11,13 @@
     "tools" : "",
     "misc" : ""
   },
+  "certification": [
+    {
+      "certificationName": "",
+      "url":"",
+      "imageName": ""
+    }
+  ],
   "experience": [
     {
       "position" : "",
