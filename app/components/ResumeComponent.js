@@ -13,6 +13,7 @@ import Contact from './ContactComponent';
 import Education from './EducationComponent';
 import Awards from './AwardsComponent';
 import Projects from './ProjectsComponent';
+import Certifications from './CertificationComponent';
 var $ = require ('jquery');
 
 let styles = {
@@ -71,6 +72,8 @@ class ResumeComponent extends Component {
               <About abt={resume.about}/>
               <br />
               <Skills skillSet={resume.skills}/>
+              <br />
+              <Certifications certifications={resume.certifications}/>
               <br />
               <Experience experience={resume.experience}/>
               <br />
