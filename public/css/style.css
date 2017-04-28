@@ -75,7 +75,9 @@ img {
 .imgSpace{
   padding-right: 18px;
 }
-
+.certificationImg {
+  height: 70px;
+}
 .img-skill-icon {
     display: inline-block;
     height: 22px;
