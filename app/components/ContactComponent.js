@@ -28,15 +28,7 @@ class ContactComponent extends Component {
       // for looping contact
       for (let contactType in contact) {
           if (contact.hasOwnProperty(contactType)) {
-              renderedcontact.push(
-                <div className='row'>
-                  <div className='col-xs-12 col-md-3'>
-                    <p className='sideHeading'>{contactType}: </p>
-                  </div>
-                  <div className='col-xs-12 col-md-9'>
-                    <p className='awardYear'>{contact[contactType]}</p>
-                  </div>
-                </div>);
+              renderedcontact.push(<a className="imgSpace" target="_blank" href={contact[contactType]}><img src={this.getImageURL(contactType)}></img></a>);
             }
       }
       return renderedcontact;
