@@ -35,9 +35,9 @@ const muiTheme = getMuiTheme({
 class ResumeComponent extends Component {
 
   componentDidMount() {
-    console.log("did mount");
+    // console.log("did mount");
     $.get("https://ipinfo.io", function(response) {
-      console.log(response);
+      // console.log(response);
       const city = response.city;
       const country = response.country;
       const region = response.region;
@@ -51,12 +51,9 @@ class ResumeComponent extends Component {
            let status = res.status;
            console.log('error in posting event');
          }
-         console.log("succesfully saved");
-         console.log(res.json());
-         return res.json();
-       })
-       .then(res =>{
-         console.log(res);
+        //  console.log("succesfully saved");
+        //  console.log(res.json());
+        //  return res.json();
        })
     }, "jsonp")
 
