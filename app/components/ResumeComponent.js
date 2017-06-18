@@ -53,6 +53,7 @@ class ResumeComponent extends Component {
          }
          console.log("succesfully saved");
          console.log(res.json());
+         return res.json();
        })
        .then(res =>{
          console.log(res);
