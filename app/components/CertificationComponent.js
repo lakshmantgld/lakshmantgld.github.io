@@ -1,5 +1,6 @@
 import React, { PropTypes, Component } from 'react';
 import { connect } from 'react-redux';
+import ReactGA from 'react-ga';
 
 // import {  } from './../actions/registerActions';
 
@@ -23,11 +24,27 @@ class CertificationComponent extends Component {
     return "./images/" + certificationImageName + ".png";
   }
 
+  trackCertificationViews(certificationType){
+    console.log(certificationType);
+    console.log("certificationType");
+    if (certificationType === 'Solutions-Architect-Associate') {
+      ReactGA.event({
+        category: 'certificationView',
+        action: 'AWS'
+      });
+    } else {
+      ReactGA.event({
+        category: 'certificationView',
+        action: 'GCP'
+      });
+    }
+  }
+
   renderCertification(certification) {
     let renderedCertification = [];
     // for looping Certifcations
     for (let i = 0; i < certification.length; i++) {
-      renderedCertification.push(<a className="imgSpace" target="_blank" href={certification[i]["url"]}><img className="certificationImg" src={this.getImageURL(certification[i]["imageName"])} title={certification[i]["certificationName"]} alt={certification[i]["certificationName"]}></img></a>);
+      renderedCertification.push(<a onClick={this.trackCertificationViews.bind(this, certification[i]["imageName"])} className="imgSpace" target="_blank" href={certification[i]["url"]}><img className="certificationImg" src={this.getImageURL(certification[i]["imageName"])} title={certification[i]["certificationName"]} alt={certification[i]["certificationName"]}></img></a>);
     }
 
     return renderedCertification;
