@@ -8,10 +8,17 @@ import {Router, Route, IndexRoute, browserHistory} from 'react-router';
 import {syncHistoryWithStore} from 'react-router-redux';
 import createLogger from 'redux-logger';
 import thunk from 'redux-thunk';
+import ReactGA from 'react-ga';
 
 import reducers from './reducers';
+import config from '../config.json';
 
 import ResumeComponent from './components/ResumeComponent';
+
+ReactGA.initialize(config.googleAnalytics, {
+  debug: true,
+  titleCase: false,
+});
 
 window.React = React;
 
@@ -30,10 +37,16 @@ browserHistory.listen(location => {
    }
  });
 
+const trackIndexPage = () => {
+ console.log("trackIndexPage");
+ ReactGA.set({ page: '/' });
+ ReactGA.pageview('/');
+}
+
 ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
-      <Route path='/' component={ResumeComponent}>
+      <Route path='/' onEnter={trackIndexPage} component={ResumeComponent}>
       </Route>
     </Router>
   </Provider>,

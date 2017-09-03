@@ -1,6 +1,6 @@
 import React, { PropTypes, Component } from 'react';
 import { connect } from 'react-redux';
-
+import ReactGA from 'react-ga';
 // import {  } from './../actions/registerActions';
 
 let styles = {
@@ -23,12 +23,21 @@ class ContactComponent extends Component {
     return "./images/" + contactType + ".png";
   }
 
+  trackProfileViews(contactType){
+    console.log(contactType);
+    console.log("callClick");
+    ReactGA.event({
+      category: 'ViewProfile',
+      action: contactType
+    });
+  }
+
   renderContact(contact) {
     let renderedcontact = [];
       // for looping contact
       for (let contactType in contact) {
           if (contact.hasOwnProperty(contactType)) {
-              renderedcontact.push(<a className="imgSpace" target="_blank" href={contact[contactType]}><img src={this.getImageURL(contactType)}></img></a>);
+              renderedcontact.push(<a onClick={this.trackProfileViews.bind(this, contactType)} className="imgSpace" target="_blank" href={contact[contactType]}><img src={this.getImageURL(contactType)}></img></a>);
             }
       }
       return renderedcontact;
