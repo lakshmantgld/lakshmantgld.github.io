@@ -1,0 +1,96 @@
+{
+  "name": "Lakshman Diwaakar T.G",
+  "address": "Shin-Yokohama, Japan",
+  "email": "diwaakartg@gmail.com",
+  "mobile": "+81-70-1454-6267",
+  "about": "A visionary leader with the architectural skills, experience and insight to elevate any application, computing platform infrastructure or data operation to the cloud.",
+  "skills" : {
+    "language" : "C, C++, JavaScript, Java, Python",
+    "frameworks" : "NodeJS, ReactJS, React Native, Redux, GraphQL, MochaJS, gRPC, Kubernetes",
+    "database" : "MySQL, MongoDB, Postgres, Redis",
+    "cloud" : "AWS, Google Cloud Platform, Microsoft Azure",
+    "tools" : "Ansible, Xcode, Git, Heroku, Maven, JustInMind, Keynote"
+  },
+  "certifications": [
+    {
+      "certificationName" : "AWS Solutions Architect - Associate",
+      "url" : "https://s3-ap-northeast-1.amazonaws.com/lakshman-certifications/awsSolutionsArchitect_AE.pdf",
+      "imageName" : "Solutions-Architect-Associate"
+    },
+    {
+      "certificationName" : "Google Cloud Platform for Systems Operations Professionals",
+      "url" : "https://s3-ap-northeast-1.amazonaws.com/lakshman-certifications/google+sysops+coursera+certificate.pdf",
+      "imageName" :"gcpsysops"
+    }
+  ],
+  "experience" : [
+    {
+      "position" : "Cloud Architect",
+      "organization" : "Fuji Xerox",
+      "location" : "Yokohama, Japan",
+      "year" : "July 2015 - Present",
+      "description" : ["Worked extensively on various AWS and GCP services. Architectured scalable and cost-efficient multi-cloud backend using both AWS and GCP.","Architectured automatic deployment pipeline using efficient CI/CD tooling.","Brainstormed an IoT idea from scratch and implemented it using efficient cloud resources.","Built reactJS based mobile and web apps powered by serverless, graphQL and NoSQL database."]
+    },
+    {
+      "position" : "Research Intern",
+      "organization" : "Ericsson",
+      "location" : "Chennai, India",
+      "year" : "January 2015 - May 2015",
+      "description" : ["Worked on big data and differential privacy. Developed Hadoop Map-Reduce project using Bi-Eclat algorithm for generating Interesting rules from big data and published a paper on the same."]
+    },
+    {
+      "position" : "Software Developer Intern",
+      "organization" : "Inforill Technologies Pvt Ltd",
+      "location" : "Chennai, India",
+      "year" :"January 2014 - April 2014",
+      "description" : ["As a Fullstack developer I worked on emberJS, nodeJS and postgres, pushed new features for Risk Management product. Built a JavaScript-based REST engine."]
+    }
+  ],
+  "education" : [
+    { 
+      "name" : "SSN College of Engineering",
+      "degree" : "B.Tech Information Technology, 8.3/10",
+      "year" : "2011 - 2015",
+      "description" : "Merit Scholarship Awardee • Head of IT web development team"
+    }
+  ],
+  "awards" : [
+    { 
+      "name" : "Winner, 24-hour hackathon",
+      "organiser" : "Avnet Technologies",
+      "date" : "March 2014",
+      "description" : "Developed a Web App for chennai tourists helping them visit Chennai with ease. The application contain GPS tracking which helps users to triangulate their position and the nearest tourist spots. Dijkstra's Algorithm was implemented to find the shortest route to cover maximum places in a given time."
+    },
+    {
+      "name" : "Winner, Competitive Coding",
+      "organiser" : "ACM",
+      "date" : "January 2014",
+      "description" : "The ACM code county is a multitier, team-based, programming competition which involves solving complex puzzles in a given time."
+    }
+  ],
+  "projects" : [
+    {
+      "name" : "Coming-Or-Not",
+      "role" : "Creator",
+      "description" : "An event planning system that is aimed to ease the work of event planners/organizers.",
+      "link" : "http://comingornot.com/"
+    },
+    { 
+      "name" : "New York City",
+      "description" : "An Open-Street-Map(OSM) implementation using reactJS, nodeJS and leaflet. This web app was built to study about Open Street Maps project.",
+      "link" : "https://hammerheadinterview.herokuapp.com/"
+    },
+    { 
+      "name" : "TeleME",
+      "description" : "Android application that has features like Call Remainder, Scheduling Sms and an Geo Alarm. Users can store the remainder for each person in the Caller List. It reminds the user when that particular person calls or the user calls the person. 1000+ downloads in Google Play Store.",
+      "link" : "https://play.google.com/store/apps/details?id=com.remainders.alarma"
+    }
+  ],
+  "contacts" : {
+    "medium" : "https://medium.com/@lakshmanLD",
+    "stackoverflow" : "https://stackoverflow.com/users/3477322/lakshman-diwaakar?tab=profile",
+    "github" : "https://github.com/lakshmantgld",
+    "twitter" : "https://twitter.com/LakshmanTgld",
+    "linkedin" : "https://jp.linkedin.com/in/lakshmandiwaakar"
+  }
+}
