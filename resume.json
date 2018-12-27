@@ -1,6 +1,6 @@
 {
-  "name": "Lakshman Diwaakar T.G",
-  "address": "Shin-Yokohama, Japan",
+  "name": "Lakshman Diwaakar T.G 🙇🏻",
+  "address": "Tokyo, Japan 🗻 ",
   "email": "diwaakartg@gmail.com",
   "mobile": "+81-70-1454-6267",
   "about": "A visionary leader with the architectural skills, experience and insight to elevate any application, computing platform infrastructure or data operation to the cloud.",
@@ -8,7 +8,7 @@
     "language" : "C, C++, JavaScript, Java, Python",
     "frameworks" : "NodeJS, ReactJS, React Native, Redux, GraphQL, MochaJS, gRPC, Kubernetes",
     "database" : "MySQL, MongoDB, Postgres, Redis",
-    "cloud" : "AWS, Google Cloud Platform, Microsoft Azure",
+    "cloud" : "Cloud Foundry, AWS, Google Cloud Platform, Microsoft Azure",
     "tools" : "Ansible, Xcode, Git, Heroku, Maven, JustInMind, Keynote"
   },
   "certifications": [
