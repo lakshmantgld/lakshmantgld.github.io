@@ -9,7 +9,7 @@
     "frameworks" : "NodeJS, ReactJS, React Native, Redux, GraphQL, MochaJS, gRPC, Kubernetes",
     "database" : "MySQL, MongoDB, Postgres, Redis",
     "cloud" : "Cloud Foundry, AWS, Google Cloud Platform, Microsoft Azure",
-    "tools" : "Ansible, Xcode, Git, Heroku, Maven, JustInMind, Keynote"
+    "tools" : "Concourse, Ansible, Xcode, Git, Heroku, Maven, JustInMind, Keynote"
   },
   "certifications": [
     {
@@ -26,9 +26,16 @@
   "experience" : [
     {
       "position" : "Cloud Architect",
+      "organization" : "Renault-Nissan-Mitsubishi Alliance",
+      "location" : "Tokyo, Japan",
+      "year" : "January 2018 - Present",
+      "description" : ["Worked on Cloud Foundry. Architectured and deployed cloud foundry environments on top of Azure.","Automated the update/upgrade process of cloud foundry with the help of concourse","Managed a cross-cultural team which is globally distributed across various countries"]
+    },
+    {
+      "position" : "Cloud Developer",
       "organization" : "Fuji Xerox",
       "location" : "Yokohama, Japan",
-      "year" : "July 2015 - Present",
+      "year" : "July 2015 - December 2017",
       "description" : ["Worked extensively on various AWS and GCP services. Architectured scalable and cost-efficient multi-cloud backend using both AWS and GCP.","Architectured automatic deployment pipeline using efficient CI/CD tooling.","Brainstormed an IoT idea from scratch and implemented it using efficient cloud resources.","Built reactJS based mobile and web apps powered by serverless, graphQL and NoSQL database."]
     },
     {
@@ -87,6 +94,7 @@
     }
   ],
   "contacts" : {
+    "youtube": "https://youtu.be/EfmDCPRMSOs",
     "medium" : "https://medium.com/@lakshmanLD",
     "stackoverflow" : "https://stackoverflow.com/users/3477322/lakshman-diwaakar?tab=profile",
     "github" : "https://github.com/lakshmantgld",
